@@ -1,0 +1,27 @@
+.ImageCard {
+  border-radius: 10px;
+  object-fit: cover;
+
+  /* Borde animado más llamativo */
+  border: 3px solid transparent;
+  background:
+    linear-gradient(var(--chamoisee), var(--chamoisee)) padding-box,
+    linear-gradient(45deg, var(--sepia-3), var(--buff), var(--sepia-3)) border-box;
+  background-size: 300% 300%;
+  animation: borderGlow 4s ease-in-out infinite;
+  box-shadow: 0 4px 15px rgba(88, 49, 1, 0.3);
+}
+
+@keyframes borderGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

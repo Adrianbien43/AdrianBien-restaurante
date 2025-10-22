@@ -1,0 +1,15 @@
+.BackgroundCard {
+  --w: 290px;
+  --h: 450px;
+  --gradient: linear-gradient(#583101ff, #a47148ff);
+
+  width: var(--w);
+  height: var(--h);
+  background: var(--gradient);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 250px 120px;
+  justify-items: center;
+  align-items: center;
+}

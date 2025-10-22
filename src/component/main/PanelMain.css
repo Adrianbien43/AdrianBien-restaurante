@@ -1,0 +1,9 @@
+.PanelMain {
+  margin-left: 260px;
+  width: calc(100% - 260px);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: border-box;
+  gap: 1rem;
+}

@@ -1,0 +1,8 @@
+.InfoCard {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 80px;
+  justify-items: center;
+  align-items: center;
+}
