@@ -1,22 +1,21 @@
-# 🍽️ Mi Restaurante
+# 🍽️ My Restaurant
 
-**Mi Restaurante** es una aplicación web creada con **React + Vite** que permite mostrar la carta de un restaurante de forma moderna e interactiva.  
-El proyecto está pensado para practicar el uso de componentes, hooks y estilos modulares en React.
+**My Restaurant** is a web application built with **React + Vite** that displays a restaurant’s menu in a modern and interactive way.  
+The project is designed to practice the use of components, hooks, and modular styles in React.
 
-![Vista previa del proyecto](./src/assets/PG.jpg)
-
-
----
-
-## 🧾 Descripción
-
-Esta aplicación muestra distintos platos de un restaurante organizados por categorías.  
-Cada plato se presenta en una tarjeta con su nombre, imagen, descripción y precio.  
-La estructura del proyecto está dividida en componentes reutilizables y bien organizados.
+![Project Preview](./src/assets/PG.jpg)
 
 ---
 
-## 🧩 Estructura del proyecto
+## 🧾 Description
+
+This application shows various restaurant dishes organized by categories.  
+Each dish is displayed on a card containing its name, image, description, and price.  
+The project structure is divided into reusable and well-organized components.
+
+---
+
+## 🧩 Project Structure
 
 ```
 src
@@ -66,17 +65,19 @@ src
 └───hooks
 ```
 
-## Menu principal
+## 🍴 Main Menu
 
-Este es mi menu que bueno he intentado realizar por primera vez de esta manera y es por lo que me he tardado mas tiempo pero... BUENO.
+This is my main menu — it’s my first time building it this way, so it took me a bit longer, but… WELL, here it is! 😄  
 
-![Vista previa del proyecto](./src/assets/menu.jpg)
+![Project Preview](./src/assets/menu.jpg)
 
-En esta parte los usuarios veran el logo de la empreza. Interactuar de forma que pueden cambiar categorias, en ⚠️<span style="color:red">**profimas actualizaciones podran incluso buscar por precio**</span>⚠️.
+In this section, users can see the company logo and interact by switching categories.  
+⚠️<span style="color:red">**In future updates, they will even be able to search by price!**</span>⚠️
 
+---
 
-## ⚙️ Instalación y ejecución
+## ⚙️ Installation and Execution
 
-1. Clona este repositorio:
+1. Clone this repository:
    ```bash
    git clone https://github.com/Adrianbien43/AdrianBien-restaurante.git
