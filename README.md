@@ -18,6 +18,7 @@ La estructura del proyecto está dividida en componentes reutilizables y bien or
 
 ## 🧩 Estructura del proyecto
 
+```
 src
 │ App.css
 │ App.jsx
@@ -63,6 +64,7 @@ src
 │ CategorySelec.jsx
 │
 └───hooks
+```
 
 ## Menu principal
 
