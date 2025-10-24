@@ -5,5 +5,15 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+
+  overflow: hidden;
+  line-height: 1.4;
+}
+
+.prueba h3 {
   font-size: 1.4rem;
+  color: #ffffff;
 }

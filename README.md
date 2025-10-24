@@ -1,16 +1,80 @@
-# React + Vite
+# 🍽️ Mi Restaurante
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Mi Restaurante** es una aplicación web creada con **React + Vite** que permite mostrar la carta de un restaurante de forma moderna e interactiva.  
+El proyecto está pensado para practicar el uso de componentes, hooks y estilos modulares en React.
 
-Currently, two official plugins are available:
+![Vista previa del proyecto](./src/assets/PG.jpg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧾 Descripción
 
-## Expanding the ESLint configuration
+Esta aplicación muestra distintos platos de un restaurante organizados por categorías.  
+Cada plato se presenta en una tarjeta con su nombre, imagen, descripción y precio.  
+La estructura del proyecto está dividida en componentes reutilizables y bien organizados.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧩 Estructura del proyecto
+
+src
+│ App.css
+│ App.jsx
+│ index.css
+│ main.jsx
+│
+├───assets
+│ react.svg
+│
+├───component
+│ ├───Card
+│ │ │ BackgroundCard.css
+│ │ │ BackgroundCard.jsx
+│ │ │ HeaderCard.css
+│ │ │ HeaderCard.jsx
+│ │ │ ImageCard.css
+│ │ │ ImageCard.jsx
+│ │ │ InfoCard.css
+│ │ │ InfoCard.jsx
+│ │ └───info
+│ │ CategoryCard.css
+│ │ CategoryCard.jsx
+│ │ PriceCard.css
+│ │ PriceCard.jsx
+│ │
+│ ├───main
+│ │ PanelMain.css
+│ │ PanelMain.jsx
+│ │ ResultsSearch.css
+│ │ ResultsSearch.jsx
+│ │
+│ └───web
+│ │ WebMenu.css
+│ │ WebMenu.jsx
+│ ├───footer
+│ │ Footer.css
+│ │ Footer.jsx
+│ ├───header
+│ │ WebBackHeader.css
+│ │ WebBackHeader.jsx
+│ └───menu
+│ CategorySelec.css
+│ CategorySelec.jsx
+│
+└───hooks
+
+## Menu principal
+
+Este es mi menu que bueno he intentado realizar por primera vez de esta manera y es por lo que me he tardado mas tiempo pero... BUENO.
+
+![Vista previa del proyecto](./src/assets/menu.jpg)
+
+En esta parte los usuarios veran el logo de la empreza. Interactuar de forma que pueden cambiar categorias, en ⚠️<span style="color:red">**profimas actualizaciones podran incluso buscar por precio**</span>⚠️.
+
+
+## ⚙️ Instalación y ejecución
+
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/Adrianbien43/AdrianBien-restaurante.git
