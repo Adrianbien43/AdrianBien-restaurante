@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useMemo } from 'react'
 import './App.css'
 import HeaderCard from './component/Card/HeaderCard'
 import BackgroundCard from './component/Card/BackgroundCard'
@@ -12,6 +12,7 @@ import Footer from './component/web/footer/Footer'
 import WebMenu from './component/web/WebMenu'
 import PanelMain from './component/main/PanelMain'
 import ResultsSearch from './component/main/ResultsSearch'
+import { useMeals } from './hooks/useMeals'
 
 const categoryTranslations = {
   Seafood: 'Mariscos',
@@ -23,11 +24,10 @@ const categoryTranslations = {
 }
 
 function App() {
-  const [meals, setMeals] = useState([])
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState(null)
   const [selectedCategory, setSelectedCategory] = useState('Seafood')
   const [searchTerm, setSearchTerm] = useState('')
+
+  const { meals, loading, error } = useMeals(selectedCategory)
 
   const categories = [
     'Seafood',
@@ -37,33 +37,6 @@ function App() {
     'Dessert',
     'Pasta'
   ]
-
-  useEffect(() => {
-    const fetchMeals = async () => {
-      try {
-        setLoading(true)
-        const res = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${selectedCategory}`)
-        if (!res.ok) throw new Error('Error al cargar los datos')
-
-        const data = await res.json()
-
-        const mealsWithPrices = data.meals.map(meal => ({
-          ...meal,
-          price: (Math.random() * 30 + 10).toFixed(2),
-          category: selectedCategory
-        }))
-
-        setMeals(mealsWithPrices)
-        setError(null)
-      } catch (err) {
-        setError(err.message)
-      } finally {
-        setLoading(false)
-      }
-    }
-
-    fetchMeals()
-  }, [selectedCategory])
 
   const filteredMeals = useMemo(() => {
     if (!searchTerm) return meals
